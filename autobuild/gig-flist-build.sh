@@ -7,7 +7,7 @@ apt-get install -y git wget
 mkdir -p /tmp/target/bin/
 mkdir -p /tmp/archives
 
-wget https://storage.googleapis.com/golang/go1.9.linux-amd64.tar.gz -O /tmp/go1.9.linux-amd64.tar.gz
+wget --progress=dot:mega https://storage.googleapis.com/golang/go1.9.linux-amd64.tar.gz -O /tmp/go1.9.linux-amd64.tar.gz
 tar -C /usr/local -xzf /tmp/go1.9.linux-amd64.tar.gz
 export GOPATH=/gopath
 mkdir -p $GOPATH
